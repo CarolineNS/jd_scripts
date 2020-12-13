@@ -1,5 +1,10 @@
 jd_scripts:
   image: akyakya/jd_scripts
+  deploy:
+    resources:
+      limits:
+        cpus: '0.2'
+        memory: 50M
   container_name: jd_scripts
   restart: always
   volumes:
